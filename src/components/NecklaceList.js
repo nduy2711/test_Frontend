@@ -4,7 +4,7 @@ function NecklaceList() {
   const [necklaces, setNecklaces] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/listNecklace")
+    fetch("https://test-backend-07in.onrender.com/listNecklace")
       .then((response) => response.json())
       .then((data) => setNecklaces(data))
       .catch((error) => console.error("Error fetching data:", error));
